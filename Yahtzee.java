@@ -21,12 +21,12 @@ public class Yahtzee {
 		} while (!invoer.equals("B") && !invoer.equals("S")); // blijft de loop herhalen tot iemand B of S invoert.
 
 		if (invoer.equals("B")) {
-			System.out.println("We gaan beginnen! Succes!");
+			System.out.println("\nWe gaan beginnen! Succes!");
 
 			new Yahtzee().startSpel();
 
 		} else if (invoer.equals("S")) {
-			System.out.println("U verlaat het spel. Bedankt voor het spelen.");
+			System.out.println("\nJe verlaat het spel. Bedankt voor het spelen.");
 		}
 
 		System.out.println("");
@@ -34,17 +34,16 @@ public class Yahtzee {
 	} // sluit main
 
 	public void startSpel() {
-		
-			
+		int i=0;
 	
-		for (int i = 0 ; i < 13 ; i++) {
-		
+		for (i = 0 ; i < 13 ; i++) {
+		System.out.println("\nRonde " + (i +1));
 			dobbelsteen.gooien();
 			
 			for (int x = 0; x < 2; x++) {
 				
 				// print resultaat
-				System.out.println("Worp: " + (x+1));
+				System.out.println("Worp " + (x+1));
 				System.out.println("Dobbelsteen A: " + dobbelsteen.dobbelA + "\nDobbelsteen B: " + dobbelsteen.dobbelB + "\nDobbelsteen C: "
 				+ dobbelsteen.dobbelC + "\nDobbelsteen D: " + dobbelsteen.dobbelD + "\nDobbelsteen E: " + dobbelsteen.dobbelE);
 		
@@ -66,6 +65,12 @@ public class Yahtzee {
 			
 			scoreblad.setScore(dobbelsteen.dobbelA, dobbelsteen.dobbelB, dobbelsteen.dobbelC, dobbelsteen.dobbelD, dobbelsteen.dobbelE);
 			
+			String doorgaan = "";
+			while (!doorgaan.equals("G")){
+				System.out.println("Druk g om door te gaan.");
+				doorgaan = scan.next().toUpperCase();
+			
+			}	
 		} // sluit for loop van spel
 		
 		scoreblad.eindeSpel();

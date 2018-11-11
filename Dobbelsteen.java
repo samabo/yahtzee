@@ -16,7 +16,7 @@ public class Dobbelsteen {
 	
 	
 	public void gooien() {
-		System.out.println("Alles is opnieuw gegooid");
+//		System.out.println("Alles is opnieuw gegooid");
 			dobbelA = r.nextInt(6) + 1;
 			dobbelB = r.nextInt(6) + 1;
 			dobbelC = r.nextInt(6) + 1;
@@ -30,27 +30,27 @@ public class Dobbelsteen {
 
 		if(invoer.contains("A")) {		
 			dobbelA = r.nextInt(6) + 1;
-			System.out.println("Dobbelsteen A is opnieuw gegooid");
+//			System.out.println("Dobbelsteen A is opnieuw gegooid");
 		}
 		
 		if(invoer.contains("B")) {	
-		dobbelB = r.nextInt(6) + 1;
-		System.out.println("Dobbelsteen B is opnieuw gegooid");
+			dobbelB = r.nextInt(6) + 1;
+//			System.out.println("Dobbelsteen B is opnieuw gegooid");
 		}
 		
 		if(invoer.contains("C")) {	
-		dobbelC = r.nextInt(6) + 1;
-		System.out.println("Dobbelsteen C is opnieuw gegooid");
+			dobbelC = r.nextInt(6) + 1;
+//			System.out.println("Dobbelsteen C is opnieuw gegooid");
 		}
 		
 		if(invoer.contains("D")) {	
-		dobbelD = r.nextInt(6) + 1;
-		System.out.println("Dobbelsteen D is opnieuw gegooid");
+			dobbelD = r.nextInt(6) + 1;
+//			System.out.println("Dobbelsteen D is opnieuw gegooid");
 		}
 		
 		if(invoer.contains("E")) {	
-		dobbelE = r.nextInt(6) + 1;
-		System.out.println("Dobbelsteen E is opnieuw gegooid");
+			dobbelE = r.nextInt(6) + 1;
+//			System.out.println("Dobbelsteen E is opnieuw gegooid");
 		}
 				
 	}// ends method gooien(String invoer)
