@@ -86,9 +86,8 @@ public class ScoreBlad {
 //		System.out.print("Dobbelstenen gesorteerd: ");			// later hoeft dit niet geprint te worden, 
 //		System.out.println(Arrays.toString(dobbelstenen));		// is ter controle voor mezelf. 
 		
-		System.out.println("\nWaar wil je de score invoeren?\n");
-		
 		printScoreSheet();
+		System.out.println("\nWaar wil je de score invoeren?\n");
 		Scanner scanner = new Scanner(System.in);
 		int keuze = scanner.nextInt();
 		
@@ -96,6 +95,7 @@ public class ScoreBlad {
 			case 1:
 				if (set1 == true) {
 					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
 					break;
 					} else {		
 						for (int i = 0; i < dobbelstenen.length; i++) {
@@ -109,7 +109,8 @@ public class ScoreBlad {
 			case 2:
 				if (set2 == true) {
 					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
-				break;
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
 				}else {	
 				for (int i = 0; i < dobbelstenen.length; i++) {
 						if (dobbelstenen[i] ==2) {
@@ -120,39 +121,68 @@ public class ScoreBlad {
 			}
 			break;
 			case 3:
+				if (set3 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {				
 				for (int i = 0; i < dobbelstenen.length; i++) {
 					if (dobbelstenen[i] ==3) {
 						sc3 += 3;
 					}
 				set3 = true;
 				}
+			}
 			break;
 			case 4:
-		
+				if (set4 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				for (int i = 0; i < dobbelstenen.length; i++) {
 					if (dobbelstenen[i] ==4) {
 						sc4 += 4;
 					}
 				set4 = true;
 				}
+				}
 			break;
 			case 5:
+				if (set5 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
+				
 				for (int i = 0; i < dobbelstenen.length; i++) {
 					if (dobbelstenen[i] ==5) {
 						sc5 += 5;
 					}
 					set5 = true;
 				}
+				}
 			break;
 			case 6:
+				if (set6 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				for (int i = 0; i < dobbelstenen.length; i++) {
 					if (dobbelstenen[i] ==5) {
 						sc6 += 6;
 					}
 					set6 = true;
 				}
+				}
 			break;
 			case 7:
+				if (set7 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				if (((dobbelstenen[0] == dobbelstenen[1]) && (dobbelstenen[1] == dobbelstenen[2])) || 
 					((dobbelstenen[1] == dobbelstenen[2]) && (dobbelstenen[2] == dobbelstenen[3])) ||
 					((dobbelstenen[2] == dobbelstenen[3]) && (dobbelstenen[3] == dobbelstenen[4]))){
@@ -160,26 +190,46 @@ public class ScoreBlad {
 				}else {
 					threeOfAKind = 0;
 				}
-			set7 = true;
+					set7 = true;
+				
+				}
+			
 			break;
 			case 8:
+				if (set8 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				if (((dobbelstenen[0] == dobbelstenen[1]) && (dobbelstenen[1] == dobbelstenen[2]) && (dobbelstenen[2] == dobbelstenen [3])) || 
 					((dobbelstenen[1] == dobbelstenen[2]) && (dobbelstenen[2] == dobbelstenen[3]) && (dobbelstenen[3] == dobbelstenen[4]))){
 						carre = dobbelA + dobbelB + dobbelC + dobbelD + dobbelE;
 				}else {
 					carre = 0;
 				}
-			set8 = true;
+					set8 = true;
+				}
 			break;
 			case 9:
+				if (set9 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				if(((dobbelstenen[0] == dobbelstenen[1]) && (dobbelstenen [2] == dobbelstenen [3]) && (dobbelstenen[3] == dobbelstenen[4])) ||
 					((dobbelstenen[0] == dobbelstenen[1]) && (dobbelstenen [1] == dobbelstenen [2]) && (dobbelstenen[3] == dobbelstenen[4]))){
 						fullHouse = 25;
 				}else { fullHouse = 0;
 				}
 			set9 = true;
+				}
 			break;
 			case 10:
+				if (set10 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				if (dobbelstenen[0] == dobbelstenen[1]) {		// dit zorgt ervoor dat dubbele waarden uit de opeenvolgende reeks worden getrokken
 					dobbelstenen[1] = 9;						// zodat een worp van 1 2 2 3 4  wordt veranderd naar 1 2 3 4 9
 				}												// en de logica van 4 opeenvolgende values kan worden gevonden als conditie voor kleine straat
@@ -200,17 +250,29 @@ public class ScoreBlad {
 				} else {
 					kleineStraat = 0;
 				}
-				set10 = true;
+					set10 = true;
+				}
 			break;
 			case 11:
+				if (set11 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				if ((dobbelstenen[0]+1 == dobbelstenen[1]) && (dobbelstenen[1]+1 == dobbelstenen[2]) && (dobbelstenen[2]+1 == dobbelstenen [3]) && (dobbelstenen[3]+1 == dobbelstenen [4])){
 					groteStraat = 40;
 				}else {
 					groteStraat = 0;
 				}
 				set11 = true;
+				}
 			break;
 			case 12:
+				if (set12 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				if ((dobbelA==dobbelB) && (dobbelC == dobbelD) && (dobbelB == dobbelE) && (dobbelB==dobbelC)){
 					yahtzee = 50;
 					System.out.println("HOERA! YAHTZEE!");
@@ -218,10 +280,18 @@ public class ScoreBlad {
 					yahtzee = 0;
 				}
 				set12 = true;
+				}
 			break;
 			case 13:
+				if (set13 == true) {
+					System.out.println("Dit veld heb je al ingevuld. Maak een andere keuze!");		// ik wil zorgen dat de speler een nieuwe keuze moet maken, dus dat het spel niet doorgaat. 
+					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
+					break;
+				}else {	
 				kans = dobbelA + dobbelB + dobbelC + dobbelD + dobbelE;
+				}
 				set13 = true;
+				
 			break;
 		}	//ends switch
 	} 
