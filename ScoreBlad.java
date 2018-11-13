@@ -99,7 +99,7 @@ public class ScoreBlad {
 					break;
 					} else {		
 						for (int i = 0; i < dobbelstenen.length; i++) {
-							if (dobbelstenen[i] ==1) {
+							if (dobbelstenen[i] == 1) {
 								sc1 += 1;
 							}
 						set1 = true;
@@ -113,7 +113,7 @@ public class ScoreBlad {
 					break;
 				}else {	
 				for (int i = 0; i < dobbelstenen.length; i++) {
-						if (dobbelstenen[i] ==2) {
+						if (dobbelstenen[i] == 2) {
 						sc2 += 2;
 					}	
 				set2 = true;
@@ -127,7 +127,7 @@ public class ScoreBlad {
 					break;
 				}else {				
 				for (int i = 0; i < dobbelstenen.length; i++) {
-					if (dobbelstenen[i] ==3) {
+					if (dobbelstenen[i] == 3) {
 						sc3 += 3;
 					}
 				set3 = true;
@@ -141,7 +141,7 @@ public class ScoreBlad {
 					break;
 				}else {	
 				for (int i = 0; i < dobbelstenen.length; i++) {
-					if (dobbelstenen[i] ==4) {
+					if (dobbelstenen[i] == 4) {
 						sc4 += 4;
 					}
 				set4 = true;
@@ -156,7 +156,7 @@ public class ScoreBlad {
 				}else {	
 				
 				for (int i = 0; i < dobbelstenen.length; i++) {
-					if (dobbelstenen[i] ==5) {
+					if (dobbelstenen[i] == 5) {
 						sc5 += 5;
 					}
 					set5 = true;
@@ -170,7 +170,7 @@ public class ScoreBlad {
 					break;
 				}else {	
 				for (int i = 0; i < dobbelstenen.length; i++) {
-					if (dobbelstenen[i] ==5) {
+					if (dobbelstenen[i] == 6) {
 						sc6 += 6;
 					}
 					set6 = true;
@@ -216,7 +216,7 @@ public class ScoreBlad {
 					setScore(dobbelA, dobbelB, dobbelC, dobbelD, dobbelE);
 					break;
 				}else {	
-				if(((dobbelstenen[0] == dobbelstenen[1]) && (dobbelstenen [2] == dobbelstenen [3]) && (dobbelstenen[3] == dobbelstenen[4])) ||
+					if(((dobbelstenen[0] == dobbelstenen[1]) && (dobbelstenen [2] == dobbelstenen [3]) && (dobbelstenen[3] == dobbelstenen[4])) ||
 					((dobbelstenen[0] == dobbelstenen[1]) && (dobbelstenen [1] == dobbelstenen [2]) && (dobbelstenen[3] == dobbelstenen[4]))){
 						fullHouse = 25;
 				}else { fullHouse = 0;
